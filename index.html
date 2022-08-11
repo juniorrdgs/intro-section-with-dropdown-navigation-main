@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <main>
+    <div class="mobile--menu">
+      <div class="dark--blur"></div>
+      <div class="mobile--menu--area">
+        <div class="mobile--nav--bar">
+          <details>
+            <summary>
+              <span class="menu--name">Features</span><img src="assets/images/icon-arrow-down.svg" alt=""
+                class="menu--name--arrow">
+            </summary>
+            <ul class="menu--drop">
+              <li class="menu--item"><img src="assets/images/icon-todo.svg" alt="todo list"
+                  class="menu--item--icon"><span>Todo List</span></li>
+              <li class="menu--item"><img src="assets/images/icon-calendar.svg" alt="calendar"
+                  class="menu--item--icon"><span>Calendar</span></li>
+              <li class="menu--item"><img src="assets/images/icon-reminders.svg" alt="reminders"
+                  class="menu--item--icon"><span>Reminders</span></li>
+              <li class="menu--item"><img src="assets/images/icon-planning.svg" alt="planning"
+                  class="menu--item--icon"><span>Planning</span></li>
+            </ul>
+          </details>
+          <details>
+            <summary><span class="menu--name">Company</span><img src="assets/images/icon-arrow-down.svg" alt=""
+                class="menu--name--arrow"></summary>
+            <ul class="menu--drop" id="drop2">
+              <li class="menu--item"><span>History</span></li>
+              <li class="menu--item"><span>Our Team</span></li>
+              <li class="menu--item"><span>Blog</span></li>
+            </ul>
+
+          </details>
+          <span class="menu--name">Careers</span>
+          <span class="menu--name">About</span>
+        </div>
+        <div class="cta">
+          <button class="cta--login">Login</button>
+          <button class="cta--register">Register</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <img class="logo" src="assets/images/logo.svg" alt="logo">
+      <div class="menu--area">
+        <img class="menu--icon" onclick="openMenu()" src="assets/images/icon-menu.svg" alt="menu icon">
+        <img class="menu--close" onclick="closeMenu()" src="assets/images/icon-close-menu.svg" alt="close menu icon">
+        <nav>
+          <div class="nav--bar">
+            <details>
+              <summary>
+                <span class="menu--name">Features</span><img src="assets/images/icon-arrow-down.svg" alt=""
+                  class="menu--name--arrow">
+              </summary>
+              <ul class="menu--drop">
+                <li class="menu--item"><img src="assets/images/icon-todo.svg" alt="todo list"
+                    class="menu--item--icon"><span>Todo List</span></li>
+                <li class="menu--item"><img src="assets/images/icon-calendar.svg" alt="calendar"
+                    class="menu--item--icon"><span>Calendar</span></li>
+                <li class="menu--item"><img src="assets/images/icon-reminders.svg" alt="reminders"
+                    class="menu--item--icon"><span>Reminders</span></li>
+                <li class="menu--item"><img src="assets/images/icon-planning.svg" alt="planning"
+                    class="menu--item--icon"><span>Planning</span></li>
+              </ul>
+            </details>
+            <details>
+              <summary><span class="menu--name">Company</span><img src="assets/images/icon-arrow-down.svg" alt=""
+                  class="menu--name--arrow"></summary>
+              <ul class="menu--drop" id="drop2">
+                <li class="menu--item"><span>History</span></li>
+                <li class="menu--item"><span>Our Team</span></li>
+                <li class="menu--item"><span>Blog</span></li>
+              </ul>
+
+            </details>
+            <span class="menu--name">Careers</span>
+            <span class="menu--name">About</span>
+          </div>
+          <div class="cta">
+            <button class="cta--login">Login</button>
+            <button class="cta--register">Register</button>
+          </div>
+        </nav>
+        <!--<div class="cta">
+          <button class="cta--login">Login</button>
+          <button class="cta--register">Register</button>
+        </div>-->
+      </div>
+    </header>
+    <section>
+      <h1>Make remote work</h1>
+      <h2>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</h2>
+      <button class="section--button">Learn more</button>
+      <div class="brands--area">
+        <img src="assets/images/client-databiz.svg" alt="databiz">
+        <img src="assets/images/client-audiophile.svg" alt="audiophile">
+        <img src="assets/images/client-meet.svg" alt="meet">
+        <img src="assets/images/client-maker.svg" alt="maker">
+      </div>
+    </section>
+    <aside>
+      <img class="hero--image--desk" src="assets/images/image-hero-desktop.png" alt="">
+      <img class="hero--image--mobile" src="assets/images/image-hero-mobile.png" alt="">
+    </aside>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
